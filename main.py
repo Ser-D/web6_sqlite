@@ -4,10 +4,10 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 
-def query_three():
-    with open("query_12.sql", "r") as f:
+def query_main():
+    with open("query_00.sql", "r") as f:
         sql = f.read()
-        print(sql)
+
 
     with sqlite3.connect("hw6.sqlite") as con:
         cur = con.cursor()
@@ -19,4 +19,4 @@ def query_three():
 
 
 if __name__ == "__main__":
-    query_three()
+    query_main()
