@@ -5,7 +5,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 def query_three():
-    with open("query_8.sql", "r") as f:
+    with open("query_12.sql", "r") as f:
         sql = f.read()
         print(sql)
 
