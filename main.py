@@ -5,7 +5,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 def query_main():
-    with open("query_00.sql", "r") as f:
+    with open("query_10.sql", "r") as f:
         sql = f.read()
 
 
