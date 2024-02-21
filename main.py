@@ -5,9 +5,8 @@ logging.basicConfig(level=logging.INFO)
 
 
 def query_main():
-    with open("query_10.sql", "r") as f:
+    with open("query_2.sql", "r") as f:
         sql = f.read()
-
 
     with sqlite3.connect("hw6.sqlite") as con:
         cur = con.cursor()

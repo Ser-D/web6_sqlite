@@ -64,7 +64,7 @@ def seed_grades():
         for _ in range(GRADES_COUNT):
             date_grade = start_date + timedelta(randint(1, 360))
             disciplines_ = randint(1, (len(disciplines) + 1))
-            grades.append((randint(0, 100), date_grade, disciplines_, student))
+            grades.append((randint(0, 100), date_grade.date(), disciplines_, student))
     cur.executemany(sql_expression, grades)
 
 

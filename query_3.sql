@@ -2,7 +2,6 @@
 
 SELECT gr.name,
 ROUND(AVG(g.grade), 2) AS average_grade
-
 from students s
 JOIN grades g ON s.id = g.student_id
 JOIN groups gr ON gr.id = s.group_id
